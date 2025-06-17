@@ -1,0 +1,30 @@
+### Регрессия
+Задача            Модель      MAE          MSE            R2
+  IC50 Linear Regression   208.10 1.462145e+05      0.561653
+  IC50     Random Forest    34.49 6.250783e+04      0.812603
+  IC50               SVR   211.16 2.784670e+05      0.165165
+  CC50 Linear Regression  9675.62 1.713905e+10 -36381.654945
+  CC50     Random Forest   300.99 2.580495e+05      0.452214
+  CC50               SVR   343.83 3.509347e+05      0.255038
+    SI Linear Regression 14418.08 4.026913e+10 -19932.991925
+    SI     Random Forest   201.47 1.842788e+06      0.087785
+    SI          CatBoost   193.96 1.837325e+06      0.090489
+    SI           XGBoost   192.53 1.837311e+06      0.090496
+
+### Классификация
+       Задача              Модель  Accuracy     F1  ROC-AUC
+IC50 > median Logistic Regression     0.700 0.7143   0.7000
+IC50 > median       Random Forest     0.745 0.7583   0.7450
+IC50 > median            CatBoost     0.720 0.7308   0.7200
+IC50 > median             XGBoost     0.705 0.7122   0.7050
+CC50 > median Logistic Regression     0.720 0.7383   0.7200
+CC50 > median       Random Forest     0.740 0.7593   0.7400
+CC50 > median            CatBoost     0.755 0.7656   0.7550
+CC50 > median             XGBoost     0.770 0.7810   0.7700
+  SI > median Logistic Regression     0.620 0.6162   0.6200
+  SI > median       Random Forest     0.660 0.6304   0.6600
+  SI > median            CatBoost     0.620 0.6200   0.6200
+  SI > median             XGBoost     0.620 0.6122   0.6200
+       SI > 8 Logistic Regression     0.695 0.5734   0.6686
+       SI > 8            CatBoost     0.670 0.5352   0.6397
+       SI > 8             XGBoost     0.720 0.6056   0.6943
